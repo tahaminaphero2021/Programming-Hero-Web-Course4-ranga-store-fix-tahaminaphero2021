@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranga Store</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  
+
+  <!-- google Montserrat  font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/f6455e1d46.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- ============header start========== -->
+    <header>
+
+      <nav class="navbar navbar-inverse">
+        <div class="container mt-5">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+         
+            <a class="navbar-brand" href="#">  <i class="fas fa-store "></i><span class ="text-light text-uppercase mt-5">Markative</a></span>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Clothes</a></li>
+              <li><a href="#">Jacket</a></li>
+              
+              
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Store products results">
+              </div>
+              <button type="submit" class="btn btn-default">Find out</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Electronic</a></li>
+              <li><a href="#">Jewelery</a></li>
+             
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <h2 class="text-primary text-center mt-4">Store <span class="text-danger text-center">Markative</span><span class="text-success text-center"> Generator</h2></span>
+      <br>
+          <p class=" mt-4 text-info text-center text-uppercase">
+          Shop, Relax, Enjoy!!</p>
+  </header>
+  <!-- ====================== header end =============== -->
+  <main class="main">
+    <!-- ===========search box============== -->
+    <section>
+  <div class="container">
+    
+      <div class="search-field">
+        <div class="search-box">
+      
+          <input id="input-field" class="search-field" type="text" placeholder="Enter the name of your products ...">
+ <!-- **************** search book button *************** -->
+          <button onclick="loadProducts()" type="button" class="btn btn-outline-primary search-button" data-toggle="button" aria-pressed="false"
+            autocomplete="off" id="search-btn" >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ============ Product details======= -->
+    <div class="row">
+      <div class="col-md-9 col-lg-9 col-sm-7">
+        <div id="all-products" class="">
+          <h1></h1>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-5 cart-main ">
+        <div class="cart" id="my-cart">
+          <table class="table">
+            <thead>
+              <h1>My-Cart</h1>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Total Added-Products:</th>
+                <td>$ <span id="total-Products">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>$ <span id="price">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Delivery-Charge:</th>
+                <td>$ <span id="delivery-charge">20</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Total-Tax:</th>
+                <td>$ <span id="total-tax">0</span></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td colspan="2">$ <span id="total">0</span></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="parces text-center">
+            <button class="btn btn-primary text-center">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+  <!-- add javascript  file  -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
